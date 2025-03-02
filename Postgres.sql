@@ -15,14 +15,5 @@ brand varchar(20),
 model varchar(20),
 year int,
 license_num varchar(20) unique,
-status varchar(20),
-foreign key (status) references car_status(status) 
+status varchar(20)
 );
-
--- Creating table car_status
-create table car_status(
-id int primary key,
-status varchar(20) unique
-);
-
-
